@@ -1,0 +1,98 @@
+.footer {
+    &-main {
+        background-color: #00337C;
+        color: #f0f0f0;
+        border-top: 6px solid var(--global-color);
+    }
+    &-menu {
+        margin: 40px 0;
+        @media(max-width: 767.989px) {
+            margin: 40px 0 15px;
+        }
+    }
+    &-title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--global-color);
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--global-color);
+    }
+    &-links {
+        display: block;
+        li {
+            letter-spacing: 1px;
+            a {
+                color: #fff;
+                font-size: 1.4rem;
+                &::before {
+                    font-family: FontAwesome;
+                    content: '\f105';
+                    padding-right: 6px;
+                }
+                &:hover {
+                    color: #bbb;
+                    border-bottom: 1px solid #bbb;
+                }
+            }
+        }
+    }
+    &-bottom {
+        text-align: center;
+        background-color: #fafafa;
+        color: #555;
+        padding-top: 10px;
+        .license {
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .copyright {
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+    }
+    &-logo {
+        display: inline-block;
+        width: 100%;
+        margin: 30px 0 20px 0;
+    }
+    &-address {
+        margin-bottom: 20px;
+        .menu-footer {
+            li {
+                position: relative;
+                display: inline-block;
+                border-right: .1rem solid #e1e1e1;
+                padding: 0 1.3rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: 500;
+            }
+        }
+    }
+    &-social {
+        .socials {
+            margin: 20px 0 0;
+            text-align: center;
+            padding: 10px 0 0;
+            li {
+                position: relative;
+                display: inline-block;
+                background: #00337C;
+                cursor: pointer;
+                border-radius: 30px;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                margin-left: 8px;
+                transition: all .3s ease-in-out;
+                a {
+                    color: #fff;
+                    font-size: 18px;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
