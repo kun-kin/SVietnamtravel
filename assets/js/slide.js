@@ -173,3 +173,26 @@ var swiper = new Swiper(".teams-slide", {
         },
     },
 });
+
+var swiper = new Swiper(".other-tours-slide", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: false,
+    speed: 600,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        374: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+    },
+
+});
